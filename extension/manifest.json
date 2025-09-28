@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "QuickAI Select",
+  "version": "1.0",
+  "description": "A browser extension to enhance your productivity with QuickAI-powered selections.",
+  "permissions": ["scripting", "activeTab", "cookies", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/logo/icon16.png",
+    "32": "assets/logo/icon32.png",
+    "48": "assets/logo/icon48.png",
+    "128": "assets/logo/icon128.png"
+  }
+}
