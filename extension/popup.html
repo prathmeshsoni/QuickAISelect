@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>⚡ QuickAI Select</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/styles/popup.css" rel="stylesheet">
+  </head>
+  <body>
+    <h5 class="text-center mb-3">⚡ QuickAI Select</h5>
+    <div class="toggle-btn" style="float: right;">
+      <span style="margin-right: 10px; font-weight: bold;">Off</span>
+      <label class="switch">
+        <input type="checkbox" id="ExtensionToggle" checked>
+        <span class="slider round"></span>
+      </label>
+      <span style="margin-left: 10px; font-weight: bold;">On</span>
+    </div>
+
+    <div class="toggle-btn">
+      <span style="margin-right: 10px; font-weight: bold;">MCQ</span>
+      <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span id="toggleLabel" style="margin-left: 10px; font-weight: bold;">Text Extractor</span>
+    </div>
+
+    <!-- Parameters Card -->
+    <div class="card shadow-sm border-0 mb-3">
+      <div class="card-body">
+        <h6 class="card-title mb-1">⚙️ Parameters</h6>
+
+        <div class="mb-2">
+          <label class="form-label" for="url">API Endpoint</label>
+          <input type="text" class="form-control" id="url" placeholder="Default Url: https://gemini-extensions.vercel.app">
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label" for="apiKey">Gemini API Key (Optional)</label>
+          <input type="password" class="form-control" id="apiKey" placeholder="e.g. AIzaSy...">
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label" for="customPrompt">Custom Prompt (Optional)</label>
+          <textarea class="form-control" id="customPrompt" rows="1"></textarea>
+        </div>
+
+        <div class="mb-2" id="demoQuestionsDiv">
+          <label class="form-label" for="demoQuestions">Demo Questions (Optional)</label>
+          <textarea class="form-control" id="demoQuestions" rows="1"></textarea>
+        </div>
+
+        <button id="saveBtn" class="btn btn-success w-100 mt-2">💾 Save Settings</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-muted small">
+      Settings are saved in cookies. Next time, they will auto-load.
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/scripts/bootstrap.js"></script>
+    <script src="./assets/scripts/popup.js"></script>
+  </body>
+</html>
