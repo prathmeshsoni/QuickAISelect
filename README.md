@@ -9,6 +9,14 @@ A lightweight **Chrome Extension** + **Flask API** that lets you instantly:
 
 <br>
 
+🌐 Live At
+
+Available on the Microsoft Edge Add-ons Store: <br>
+👉 https://microsoftedge.microsoft.com/addons/detail/lffcelmmkbikobogmkcicbdbjjmledic
+
+You can install it directly from the Edge Store and start using Gemini Extension instantly — no manual setup needed!
+
+
 ## 🎥 Demo Preview
 
 **MCQ Mode**
